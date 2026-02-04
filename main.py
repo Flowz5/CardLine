@@ -25,6 +25,7 @@ def jouer_classification(repertoire):
         except ValueError:
             print("Veuillez saisir un nombre valide.")
 
+
         print("\n--------------- Cardline ---------------")
         fonctions.afficherListe(liste_jeu)
         print("------------------------------------------")
