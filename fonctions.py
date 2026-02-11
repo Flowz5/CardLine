@@ -1,8 +1,7 @@
 import random
-from typing import List, Any
+from typing import List
 from animal import Animal
 
-# --- Tes fonctions existantes ---
 def afficherListe(liste: List[object]) -> None:
     for i in range(len(liste)):
         print(f"{i} - {liste[i]}")
@@ -27,8 +26,6 @@ def charger_donnees() -> List[Animal]:
 def ajouterAnimal(liste: List[object], ani: object) -> None:
     liste.append(ani)
 
-# --- NOUVELLES FONCTIONS UTILITAIRES ---
-
 def saisir_entier(msg: str, min_val: int, max_val: int) -> int:
     """Fonction blindée pour saisir un entier entre min et max."""
     while True:
@@ -42,5 +39,4 @@ def saisir_entier(msg: str, min_val: int, max_val: int) -> int:
 
 def get_valeur_comparaison(ani: Animal, critere: str) -> float:
     """Récupère dynamiquement la valeur (taille, poids...) d'un animal."""
-    # getattr(obj, "nom", default) est magique : ça remplace obj.nom
     return getattr(ani, critere, 0)

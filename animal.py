@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 class Animal:
     def __init__(self, nom, nom_scientifique, taille, poids=0, longevite=0):
         self.nom = nom
@@ -6,7 +8,7 @@ class Animal:
         self.poids = float(poids)
         self.longevite = int(longevite)
 
-    def comparer(self, other: 'Animal') -> bool:
+    def comparer(self, other: Animal) -> bool:
         return self.taille <= other.taille
 
     def __str__(self):
