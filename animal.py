@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 class Animal:
     def __init__(self, nom, nom_scientifique, taille, poids=0, longevite=0):
         self.nom = nom
