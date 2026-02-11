@@ -113,7 +113,6 @@ while choix != 9:
         nom = input("Nom : ")
         sci = input("Nom scientifique : ")
         try:
-            # On demande toutes les stats pour être compatible avec les futurs changements de règles
             t = float(input("Taille (m) : "))
             p = float(input("Poids (kg) : "))
             l = int(input("Longevité (ans) : "))
